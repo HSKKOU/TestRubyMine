@@ -13,3 +13,11 @@
 /tmp
 
 /vendor/bundle
+
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
+.secret
