@@ -1,0 +1,20 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password: hskk1120551lab
+  host: localhost
+  socket: /tmp/mysql.sock
+
+development:
+  <<: *default
+  database: TestRubyMine_development
+
+test:
+  <<: *default
+  database: TestRubyMine_test
+
+production:
+  <<: *default
+  database: TestRubyMine_production
